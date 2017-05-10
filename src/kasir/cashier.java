@@ -11,12 +11,12 @@ import javax.swing.JOptionPane;
  *
  * @author ACER
  */
-public class CashierProgram extends javax.swing.JFrame {
+public class cashier extends javax.swing.JFrame {
 
     /**
-     * Creates new form CashierProgram
+     * Creates new form cashier
      */
-    public CashierProgram() {
+    public cashier() {
         initComponents();
     }
 
@@ -29,70 +29,51 @@ public class CashierProgram extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jMenuBar2 = new javax.swing.JMenuBar();
-        jMenu2 = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        RBNS = new javax.swing.JRadioButton();
+        jLabel2 = new javax.swing.JLabel();
         RBNG = new javax.swing.JRadioButton();
         RBMG = new javax.swing.JRadioButton();
         RBSA = new javax.swing.JRadioButton();
         RBSI = new javax.swing.JRadioButton();
-        txtjmlHarga = new javax.swing.JTextField();
-        txtjmlNS = new javax.swing.JTextField();
-        txtRBMG = new javax.swing.JTextField();
-        txtRBSA = new javax.swing.JTextField();
+        RBNS = new javax.swing.JRadioButton();
+        txtRBNS = new javax.swing.JTextField();
         txtRBSI = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        txtRBSA = new javax.swing.JTextField();
+        txtRBMG = new javax.swing.JTextField();
+        txtRBNG = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        txtRBNG = new javax.swing.JTextField();
-        txtjmlNG = new javax.swing.JTextField();
-        txtjmlMG = new javax.swing.JTextField();
-        txtjmlSA = new javax.swing.JTextField();
-        txtjmlSI = new javax.swing.JTextField();
-        btnExit = new javax.swing.JButton();
-        btnHapus = new javax.swing.JButton();
-        btnHitung = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        txtRBNS = new javax.swing.JTextField();
+        txtjmlNS = new javax.swing.JTextField();
+        txtjmlSI = new javax.swing.JTextField();
+        txtjmlSA = new javax.swing.JTextField();
+        txtjmlMG = new javax.swing.JTextField();
+        txtjmlNG = new javax.swing.JTextField();
+        btnExit = new javax.swing.JButton();
+        btnHitung = new javax.swing.JButton();
+        btnHapus = new javax.swing.JButton();
+        txtjmlHarga = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
 
-        jMenu2.setText("File");
-        jMenuBar2.add(jMenu2);
-
-        jMenu3.setText("Edit");
-        jMenuBar2.add(jMenu3);
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(51, 0, 0));
         jPanel1.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 0, 0));
-        jLabel1.setText("KEDAI SUKA MURA");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(200, 50, 280, 40);
+        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(51, 0, 0));
+        jLabel2.setText("KEDAI SUKA MURA");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(200, 50, 280, 40);
 
-        RBNS.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        RBNS.setForeground(new java.awt.Color(51, 0, 0));
-        RBNS.setText("Nasi");
-        RBNS.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RBNSActionPerformed(evt);
-            }
-        });
-        jPanel1.add(RBNS);
-        RBNS.setBounds(60, 310, 120, 29);
-
-        RBNG.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        RBNG.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         RBNG.setForeground(new java.awt.Color(51, 0, 0));
         RBNG.setText("Nasi Goreng");
         RBNG.addActionListener(new java.awt.event.ActionListener() {
@@ -101,9 +82,9 @@ public class CashierProgram extends javax.swing.JFrame {
             }
         });
         jPanel1.add(RBNG);
-        RBNG.setBounds(60, 110, 120, 29);
+        RBNG.setBounds(60, 110, 140, 35);
 
-        RBMG.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        RBMG.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         RBMG.setForeground(new java.awt.Color(51, 0, 0));
         RBMG.setText("Mie Goreng");
         RBMG.addActionListener(new java.awt.event.ActionListener() {
@@ -112,9 +93,9 @@ public class CashierProgram extends javax.swing.JFrame {
             }
         });
         jPanel1.add(RBMG);
-        RBMG.setBounds(60, 160, 120, 29);
+        RBMG.setBounds(60, 160, 140, 35);
 
-        RBSA.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        RBSA.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         RBSA.setForeground(new java.awt.Color(51, 0, 0));
         RBSA.setText("Soto Ayam");
         RBSA.addActionListener(new java.awt.event.ActionListener() {
@@ -123,9 +104,9 @@ public class CashierProgram extends javax.swing.JFrame {
             }
         });
         jPanel1.add(RBSA);
-        RBSA.setBounds(60, 210, 120, 29);
+        RBSA.setBounds(60, 210, 140, 35);
 
-        RBSI.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        RBSI.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         RBSI.setForeground(new java.awt.Color(51, 0, 0));
         RBSI.setText("Sop Iga");
         RBSI.addActionListener(new java.awt.event.ActionListener() {
@@ -134,120 +115,141 @@ public class CashierProgram extends javax.swing.JFrame {
             }
         });
         jPanel1.add(RBSI);
-        RBSI.setBounds(60, 260, 120, 29);
+        RBSI.setBounds(60, 260, 140, 35);
 
-        txtjmlHarga.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        txtjmlHarga.setForeground(new java.awt.Color(51, 0, 0));
-        jPanel1.add(txtjmlHarga);
-        txtjmlHarga.setBounds(230, 480, 230, 30);
-
-        txtjmlNS.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        txtjmlNS.setForeground(new java.awt.Color(51, 0, 0));
-        txtjmlNS.addActionListener(new java.awt.event.ActionListener() {
+        RBNS.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        RBNS.setForeground(new java.awt.Color(51, 0, 0));
+        RBNS.setText("Nasi");
+        RBNS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtjmlNSActionPerformed(evt);
+                RBNSActionPerformed(evt);
             }
         });
-        jPanel1.add(txtjmlNS);
-        txtjmlNS.setBounds(430, 310, 50, 30);
+        jPanel1.add(RBNS);
+        RBNS.setBounds(60, 310, 140, 35);
 
-        txtRBMG.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        txtRBMG.setForeground(new java.awt.Color(51, 0, 0));
-        jPanel1.add(txtRBMG);
-        txtRBMG.setBounds(230, 160, 140, 30);
+        txtRBNS.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        txtRBNS.setForeground(new java.awt.Color(51, 0, 0));
+        txtRBNS.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(txtRBNS);
+        txtRBNS.setBounds(230, 310, 160, 30);
 
-        txtRBSA.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        txtRBSA.setForeground(new java.awt.Color(51, 0, 0));
-        jPanel1.add(txtRBSA);
-        txtRBSA.setBounds(230, 210, 140, 30);
-
-        txtRBSI.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        txtRBSI.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         txtRBSI.setForeground(new java.awt.Color(51, 0, 0));
+        txtRBSI.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPanel1.add(txtRBSI);
-        txtRBSI.setBounds(230, 260, 140, 30);
+        txtRBSI.setBounds(230, 260, 160, 30);
 
-        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(51, 0, 0));
-        jLabel2.setText("X");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(390, 160, 40, 30);
+        txtRBSA.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        txtRBSA.setForeground(new java.awt.Color(51, 0, 0));
+        txtRBSA.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(txtRBSA);
+        txtRBSA.setBounds(230, 210, 160, 30);
 
-        jLabel3.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(51, 0, 0));
-        jLabel3.setText("X");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(390, 110, 40, 30);
+        txtRBMG.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        txtRBMG.setForeground(new java.awt.Color(51, 0, 0));
+        txtRBMG.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(txtRBMG);
+        txtRBMG.setBounds(230, 160, 160, 30);
 
-        jLabel4.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(51, 0, 0));
-        jLabel4.setText("X");
-        jPanel1.add(jLabel4);
-        jLabel4.setBounds(390, 260, 40, 30);
-
-        jLabel5.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(51, 0, 0));
-        jLabel5.setText("X");
-        jPanel1.add(jLabel5);
-        jLabel5.setBounds(390, 310, 40, 30);
-
-        jLabel6.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(51, 0, 0));
-        jLabel6.setText("X");
-        jPanel1.add(jLabel6);
-        jLabel6.setBounds(390, 210, 40, 30);
-
-        txtRBNG.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        txtRBNG.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         txtRBNG.setForeground(new java.awt.Color(51, 0, 0));
+        txtRBNG.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtRBNG.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtRBNGActionPerformed(evt);
             }
         });
         jPanel1.add(txtRBNG);
-        txtRBNG.setBounds(230, 110, 140, 30);
+        txtRBNG.setBounds(230, 110, 160, 30);
 
-        txtjmlNG.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        txtjmlNG.setForeground(new java.awt.Color(51, 0, 0));
-        txtjmlNG.addActionListener(new java.awt.event.ActionListener() {
+        jLabel3.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(51, 0, 0));
+        jLabel3.setText("X");
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(420, 110, 40, 30);
+
+        jLabel4.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(51, 0, 0));
+        jLabel4.setText("X");
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(420, 160, 40, 30);
+
+        jLabel6.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(51, 0, 0));
+        jLabel6.setText("X");
+        jPanel1.add(jLabel6);
+        jLabel6.setBounds(420, 210, 40, 30);
+
+        jLabel5.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(51, 0, 0));
+        jLabel5.setText("X");
+        jPanel1.add(jLabel5);
+        jLabel5.setBounds(420, 260, 40, 30);
+
+        jLabel7.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(51, 0, 0));
+        jLabel7.setText("X");
+        jPanel1.add(jLabel7);
+        jLabel7.setBounds(420, 310, 40, 30);
+
+        txtjmlNS.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        txtjmlNS.setForeground(new java.awt.Color(51, 0, 0));
+        txtjmlNS.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtjmlNS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtjmlNGActionPerformed(evt);
+                txtjmlNSActionPerformed(evt);
             }
         });
-        jPanel1.add(txtjmlNG);
-        txtjmlNG.setBounds(430, 110, 50, 30);
+        jPanel1.add(txtjmlNS);
+        txtjmlNS.setBounds(480, 310, 70, 30);
 
-        txtjmlMG.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        txtjmlMG.setForeground(new java.awt.Color(51, 0, 0));
-        txtjmlMG.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtjmlMGActionPerformed(evt);
-            }
-        });
-        jPanel1.add(txtjmlMG);
-        txtjmlMG.setBounds(430, 160, 50, 30);
-
-        txtjmlSA.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        txtjmlSA.setForeground(new java.awt.Color(51, 0, 0));
-        txtjmlSA.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtjmlSAActionPerformed(evt);
-            }
-        });
-        jPanel1.add(txtjmlSA);
-        txtjmlSA.setBounds(430, 210, 50, 30);
-
-        txtjmlSI.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        txtjmlSI.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         txtjmlSI.setForeground(new java.awt.Color(51, 0, 0));
+        txtjmlSI.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtjmlSI.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtjmlSIActionPerformed(evt);
             }
         });
         jPanel1.add(txtjmlSI);
-        txtjmlSI.setBounds(430, 260, 50, 30);
+        txtjmlSI.setBounds(480, 260, 70, 30);
+
+        txtjmlSA.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        txtjmlSA.setForeground(new java.awt.Color(51, 0, 0));
+        txtjmlSA.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtjmlSA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtjmlSAActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtjmlSA);
+        txtjmlSA.setBounds(480, 210, 70, 30);
+
+        txtjmlMG.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        txtjmlMG.setForeground(new java.awt.Color(51, 0, 0));
+        txtjmlMG.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtjmlMG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtjmlMGActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtjmlMG);
+        txtjmlMG.setBounds(480, 160, 70, 30);
+
+        txtjmlNG.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        txtjmlNG.setForeground(new java.awt.Color(51, 0, 0));
+        txtjmlNG.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtjmlNG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtjmlNGActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtjmlNG);
+        txtjmlNG.setBounds(480, 110, 70, 30);
 
         btnExit.setBackground(new java.awt.Color(255, 255, 255));
-        btnExit.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        btnExit.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         btnExit.setForeground(new java.awt.Color(51, 0, 0));
         btnExit.setText("EXIT");
         btnExit.addActionListener(new java.awt.event.ActionListener() {
@@ -256,22 +258,10 @@ public class CashierProgram extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnExit);
-        btnExit.setBounds(490, 370, 70, 29);
-
-        btnHapus.setBackground(new java.awt.Color(255, 255, 255));
-        btnHapus.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        btnHapus.setForeground(new java.awt.Color(51, 0, 0));
-        btnHapus.setText("HAPUS");
-        btnHapus.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnHapusActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnHapus);
-        btnHapus.setBounds(360, 420, 100, 29);
+        btnExit.setBounds(490, 370, 90, 35);
 
         btnHitung.setBackground(new java.awt.Color(255, 255, 255));
-        btnHitung.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        btnHitung.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         btnHitung.setForeground(new java.awt.Color(51, 0, 0));
         btnHitung.setText("HITUNG");
         btnHitung.addActionListener(new java.awt.event.ActionListener() {
@@ -280,30 +270,45 @@ public class CashierProgram extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnHitung);
-        btnHitung.setBounds(230, 420, 100, 29);
+        btnHitung.setBounds(230, 420, 120, 35);
 
-        jLabel7.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(51, 0, 0));
-        jLabel7.setText("JUMLAH HARGA");
-        jPanel1.add(jLabel7);
-        jLabel7.setBounds(60, 490, 160, 26);
+        btnHapus.setBackground(new java.awt.Color(255, 255, 255));
+        btnHapus.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        btnHapus.setForeground(new java.awt.Color(51, 0, 0));
+        btnHapus.setText("HAPUS");
+        btnHapus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHapusActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnHapus);
+        btnHapus.setBounds(360, 420, 120, 35);
 
-        txtRBNS.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        txtRBNS.setForeground(new java.awt.Color(51, 0, 0));
-        jPanel1.add(txtRBNS);
-        txtRBNS.setBounds(230, 310, 140, 30);
+        txtjmlHarga.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        txtjmlHarga.setForeground(new java.awt.Color(51, 0, 0));
+        txtjmlHarga.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(txtjmlHarga);
+        txtjmlHarga.setBounds(230, 480, 250, 30);
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kasir/food.jpg"))); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(51, 0, 0));
+        jLabel8.setText("JUMLAH HARGA");
         jPanel1.add(jLabel8);
-        jLabel8.setBounds(20, 30, 590, 510);
+        jLabel8.setBounds(60, 480, 180, 26);
 
-        jMenuBar1.setBackground(new java.awt.Color(255, 255, 255));
-        jMenuBar1.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kasir/food.jpg"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(20, 20, 590, 530);
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 0, 630, 570);
+
+        jMenuBar1.setBackground(new java.awt.Color(51, 0, 0));
+        jMenuBar1.setForeground(new java.awt.Color(255, 255, 255));
 
         jMenu1.setText("File");
 
-        jMenuItem1.setBackground(new java.awt.Color(255, 255, 255));
-        jMenuItem1.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         jMenuItem1.setText("Exit");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -316,23 +321,24 @@ public class CashierProgram extends javax.swing.JFrame {
 
         setJMenuBar(jMenuBar1);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 631, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 563, Short.MAX_VALUE)
-        );
-
-        pack();
+        setSize(new java.awt.Dimension(644, 631));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-    System.exit(0);        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    private void btnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHapusActionPerformed
+        txtjmlNG.setEditable(false);
+        txtjmlNG.setText("");
+        txtjmlMG.setEditable(false);
+        txtjmlMG.setText("");
+        txtjmlSA.setEditable(false);
+        txtjmlSA.setText("");
+        txtjmlSI.setEditable(false);
+        txtjmlSI.setText("");
+        txtjmlNS.setEditable(false);
+        txtjmlNS.setText("");
+        txtjmlHarga.setText("");
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnHapusActionPerformed
 
     private void btnHitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHitungActionPerformed
         int total=0;
@@ -373,21 +379,6 @@ public class CashierProgram extends javax.swing.JFrame {
         txtjmlHarga.setText("" +total);        // TODO add your handling code here:
     }//GEN-LAST:event_btnHitungActionPerformed
 
-    private void btnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHapusActionPerformed
-        txtjmlNG.setEditable(false);
-        txtjmlNG.setText("");
-        txtjmlMG.setEditable(false);
-        txtjmlMG.setText("");
-        txtjmlSA.setEditable(false);
-        txtjmlSA.setText("");
-        txtjmlSI.setEditable(false);
-        txtjmlSI.setText("");
-        txtjmlNS.setEditable(false);
-        txtjmlNS.setText("");
-        txtjmlHarga.setText("");
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnHapusActionPerformed
-
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         int X= JOptionPane.showConfirmDialog(null,"Keluar Program","Exit",JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
         if(X==JOptionPane.YES_OPTION){
@@ -397,29 +388,40 @@ public class CashierProgram extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnExitActionPerformed
 
-    private void txtjmlSIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtjmlSIActionPerformed
+    private void txtjmlNGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtjmlNGActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtjmlSIActionPerformed
-
-    private void txtjmlSAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtjmlSAActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtjmlSAActionPerformed
+    }//GEN-LAST:event_txtjmlNGActionPerformed
 
     private void txtjmlMGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtjmlMGActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtjmlMGActionPerformed
 
-    private void txtjmlNGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtjmlNGActionPerformed
+    private void txtjmlSAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtjmlSAActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtjmlNGActionPerformed
+    }//GEN-LAST:event_txtjmlSAActionPerformed
+
+    private void txtjmlNSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtjmlNSActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtjmlNSActionPerformed
+
+    private void txtjmlSIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtjmlSIActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtjmlSIActionPerformed
 
     private void txtRBNGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRBNGActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtRBNGActionPerformed
 
-    private void txtjmlNSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtjmlNSActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtjmlNSActionPerformed
+    private void RBNSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RBNSActionPerformed
+        //UNTUK NASI
+        int nasi=5000;
+        if(RBNS.isSelected()){
+            txtRBNS.setText("" +RBNS.getText());
+            txtRBNS.setText("" +nasi);
+        }else{
+            txtRBNS.setText("");
+        }      // TODO add your handling code here:
+    }//GEN-LAST:event_RBNSActionPerformed
 
     private void RBSIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RBSIActionPerformed
         //UNTUK SOP IGA
@@ -471,22 +473,9 @@ public class CashierProgram extends javax.swing.JFrame {
         }        // TODO add your handling code here:
     }//GEN-LAST:event_RBNGActionPerformed
 
-iga);
-        }else{
-            txtRBSI.setText("");
-        }        // TODO add your handling code here:
-    }                                    
-
-    private void RBNSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RBNSActionPerformed
-        //UNTUK NASI
-        int nasi=5000;
-        if(RBNS.isSelected()){
-            txtRBNS.setText("" +RBNS.getText());
-            txtRBNS.setText("" +nasi);
-        }else{
-            txtRBNS.setText("");
-        }      // TODO add your handling code here:
-    }//GEN-LAST:event_RBNSActionPerformed
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    System.exit(0);         // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -505,20 +494,20 @@ iga);
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CashierProgram.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(cashier.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CashierProgram.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(cashier.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CashierProgram.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(cashier.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CashierProgram.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(cashier.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CashierProgram().setVisible(true);
+                new cashier().setVisible(true);
             }
         });
     }
@@ -541,10 +530,7 @@ iga);
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txtRBMG;
